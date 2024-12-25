@@ -5,7 +5,7 @@ public class SecurityConstant {
     public static final String ROLE_ADMIN = "ROLE_ADMIN";
     public static final String ROLE_USER = "ROLE_USER";
     // Endpoints
-    public static final String REGISTER_CLIENT = "/api/v1/clients/register";
+    public static final String REGISTER_CLIENT = "/api/v1/register";
     public static final String LOGIN_CLIENT = "/api/v1/login";
     public static final String UPDATE_PRODUCT = "/api/v1/updateProduct/**";
     public static final String DELETE_PRODUCT = "/api/v1/deleteProduct/**";
@@ -15,7 +15,8 @@ public class SecurityConstant {
     public static final String GET_ALL_PRODUCTS = "/api/v1/getAllProduct";
     public static final String GET_PRODUCT_BY_ID = "/api/v1/getProductById/**";
 
-
+    // JWT token validity
+    public static final long JWT_TOKEN_VALIDITY = 5 * 60 * 60;
 
     private SecurityConstant() {
 
